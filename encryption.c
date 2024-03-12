@@ -1,17 +1,23 @@
 #include <stdio.h>
 
 int main () {
-    int length;
-    char userPass[] = {}, encryptedUserPass[length];
+    char userPass[] = {}, encryptedUserPass[];
+    int length, i;
 
-    printf("enter your passwored to be encryped: ");
+    printf("Enter your password to be encryped: ");
     scanf("%s",userPass);
 
     length = sizeof(userPass) / sizeof(userPass[0]);
 
-    for (int i = 0; i < length; i++) {
+    for (i = 0; i < length; i++) {
         encryptedUserPass[i] = userPass[i] + 3;
     }
+
+    printf("Your unencrypted password is: ");
+    for (i = 0; i < length; i++) {
+        printf("%c", encryptedUserPass[i]);
+    }
+    printf(".");
     
     return 0;
 }
