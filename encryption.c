@@ -13,6 +13,7 @@ int main(int argc, char *argv[]) {
     for (i = 0; userPass[i] != '\0'; i++) {
         encryptedUserPass[i] = userPass[i] + 3;
     }
+<<<<<<< HEAD
 
 	printf("Your encrypted password is: ");
     for (i = 0; userPass[i] != '\0'; i++) {
@@ -32,3 +33,8 @@ int main(int argc, char *argv[]) {
 	
 	return 0;
 }
+=======
+    //hsvchvsycv
+    return 0;
+}
+>>>>>>> 567e3cc1222140f320aa5f224d620d5bff1e3220
